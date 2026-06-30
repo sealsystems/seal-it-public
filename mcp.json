@@ -6,6 +6,10 @@
     {
       "name": "example-server",
       "url": "/servers/example-server.json"
+    },
+    {
+      "name": "new-server",
+      "url": "/servers/new-server.json"
     }
   ]
 }

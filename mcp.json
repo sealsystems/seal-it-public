@@ -8,8 +8,8 @@
       "url": "/servers/example-server.json"
     },
     {
-      "name": "new-server",
-      "url": "/servers/new-server.json"
+      "name": "demo.configurator.sealsystems.cloud",
+      "url": "/servers/demo.configurator.sealsystems.cloud.json"
     }
   ]
 }

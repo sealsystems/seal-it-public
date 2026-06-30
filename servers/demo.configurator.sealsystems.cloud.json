@@ -1,12 +1,6 @@
 {
-  "name": "example-server",
-  "description": "An example MCP server for testing",
-  "command": "node",
-  "args": ["./mcp/index.js"],
-  "env": {
-    "API_KEY": "${API_KEY}"
-  },
-  "requirements": {
-    "node": ">=18.0.0"
-  }
+  "name": "demo.configurator.sealsystems.cloud",
+  "description": "SEAL Systems demo configurator MCP server",
+  "type": "http",
+  "url": "https://demo.configurator.sealsystems.cloud/mcp"
 }

@@ -1,0 +1,12 @@
+{
+  "name": "my-mcp-registry",
+  "description": "My custom MCP registry",
+  "version": "1.0.0",
+  "servers": [
+    {
+      "name": "example-server",
+      "url": "/servers/example-server.json"
+    }
+  ]
+}
+

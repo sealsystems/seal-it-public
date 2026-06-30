@@ -2,7 +2,7 @@
   "name": "example-server",
   "description": "An example MCP server for testing",
   "command": "node",
-  "args": ["./dist/index.js"],
+  "args": ["./mcp/index.js"],
   "env": {
     "API_KEY": "${API_KEY}"
   },

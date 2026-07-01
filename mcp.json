@@ -4,13 +4,8 @@
   "version": "1.0.0",
   "servers": [
     {
-      "name": "example-server",
-      "url": "/servers/example-server.json"
-    },
-    {
       "name": "demo.configurator.sealsystems.cloud",
       "url": "/servers/demo.configurator.sealsystems.cloud.json"
     }
   ]
 }
-

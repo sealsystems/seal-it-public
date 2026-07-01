@@ -1,0 +1,50 @@
+name: Deploy MCP Registry
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Create v0 endpoint
+        run: |
+          mkdir -p public
+          cat > public/v0 << 'EOF'
+          {
+            "name": "seal-systems-mcp-registry",
+            "description": "SEAL Systems MCP Registry",
+            "version": "1.0.0",
+            "servers": [
+              {
+                "name": "demo.configurator.sealsystems.cloud",
+                "url": "/servers/demo.configurator.sealsystems.cloud.json"
+              }
+            ]
+          }
+          EOF
+          cat > public/v0.1 << 'EOF'
+          {
+            "name": "seal-systems-mcp-registry",
+            "description": "SEAL Systems MCP Registry",
+            "version": "1.0.0",
+            "servers": [
+              {
+                "name": "demo.configurator.sealsystems.cloud",
+                "url": "/servers/demo.configurator.sealsystems.cloud.json"
+              }
+            ]
+          }
+          EOF
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          cname: sealsystems.github.io

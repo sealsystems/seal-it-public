@@ -3,7 +3,11 @@
   "description": "My custom MCP registry",
   "version": "1.0.0",
   "servers": [
+<<<<<<< HEAD:mcp.json.off
     {
+=======
+   {
+>>>>>>> 70d05f82c724f3719737730350b0ae71dd4f1663:mcp.json
       "name": "demo.configurator.sealsystems.cloud",
       "url": "/servers/demo.configurator.sealsystems.cloud.json"
     }
